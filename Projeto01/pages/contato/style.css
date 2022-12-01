@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gabriola';
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo form {
+}
+.conteudo .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    background-color: #404588;
+    min-width: 10rem;
+    max-width: 17rem;
+    height: 17rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box input {
+    margin: .5rem 0 .5rem 0;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.input-box textarea {
+    margin: .5rem 0 .5rem 0;
+    width: 100%;
+    height: 5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.input-box input[type=submit] {
+    width: 60%;
+    height: 3rem;
+    margin-top: .5rem;
+    background: hsl(236, 36%, 50%);
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.input-message {
+    margin-top: .5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/*estilizando o banner*/
+section.banner-principal {
+	width: 100%;
+	height: 80%;
+	background-image: url('../../imagens/livro.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+/*efeito de sobrepor imagem*/
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*estilizando o form*/
+section.banner-principal form {
+    box-shadow: 0 10px 0;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*deixa 100% responsivo, não corre o risco de ficar flutuando*/
+	transform: translate(-50%, -50%);
+	-ms-transform: translate -50%, -50%;
+}
+
+section.banner-principal form h2 {
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+section.banner-principal form p {
+	color: rgb(255, 255, 255);
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+
+}
+footer{
+	position: absolute;
+	background: #313462;
+	padding: 30px 0;
+	bottom: 0;
+	width: 100%;
+    height: 10%;
+    z-index: 2;
+}
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3rem;
+
+}

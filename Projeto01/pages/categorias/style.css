@@ -1,0 +1,83 @@
+html body{
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gabriola';
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.conteudo h2 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: #404588;
+}
+
+.livros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.livro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #404588;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 7px 7px 5px #888888;
+}
+.capa-livro img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.livro .info {
+  font-size: 1.3rem;
+}
+.btn-add {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid #404588;
+  box-shadow: 10px;
+}
+footer{
+	position: fixed;
+	background: #313462;
+	padding: 30px 0;
+	bottom: 0;
+	width: 100%;
+    height: 10%;
+    z-index: 2;
+}
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3rem;
+
+}

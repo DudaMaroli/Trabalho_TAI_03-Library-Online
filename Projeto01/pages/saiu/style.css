@@ -1,0 +1,39 @@
+html {
+    background-color: rgba(207, 207, 207, 0.918);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabriola';
+}
+
+/*classes padrão. iremos utilizar durante todo o projeto*/
+.fabio {
+    display: flex;
+    flex-direction: column;
+}
+
+.fabio h1 {
+    color: rgb(53, 83, 165);
+    text-align: center;
+    padding-top: 80px;
+    font-size: 56px;
+}
+
+.fabio button a {
+    text-decoration: none;
+    font-size: 32px;
+    color: rgb(53, 83, 165);
+    max-width: 400px;
+}
+
+.fabio button {
+    align-self: center;
+    color: rgba(120, 35, 177, 0.678);
+    border-radius: 30px;
+    border-color: blue;
+    height: 100px;
+    max-width: 40rem;
+}

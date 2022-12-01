@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gabriola';
+}
+/*estilizando o banner*/
+section.banner-principal {
+	width: 100%;
+	height: 600px;
+	background-image: url('../imagens/livro.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+/*efeito de sobrepor imagem*/
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.banner-principal form {
+	width: 93%;
+	max-width: 600px;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*deixa 100% responsivo, não corre o risco de ficar flutuando*/
+	transform: translate(-50%, -50%);
+	-ms-transform: translate -50%, -50%;
+}
+
+section.banner-principal form h2 {
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+
+}
+.conteudo-texto {
+	display: flex;
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 95%;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+	.conteudo-texto {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.texto {
+	font-size: 1.2rem;
+	margin: 1rem;
+	margin-top: 2rem;
+	max-width: 50%;
+}
+.texto h2 {
+	text-align: center;
+	font-size: 2.3rem;
+	font-weight: 300;
+	color: #444;
+}
+.texto p {
+	color: #444;
+	font-weight: 300;
+	margin-top: 10px;
+	text-align: justify;
+}
+@media screen and (max-width: 768px) {
+	.texto {
+		max-width: 100%;
+	}
+}
+.imagem-texto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	min-width: max-content;
+	margin-bottom: 2rem;
+}
+.imagem-texto img {
+	width: 100%;
+	height: fit-content;
+}
+@media screen and (max-width: 768px) {
+	.imagem-texto {
+		width: 80%;
+	}
+}
+.conteudo-ranking {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.4rem;
+	padding: 40px 0;
+	background: #e1e1e1;
+}
+
+.conteudo-ranking h2 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: 400;
+	color: rgb(150, 150, 150);
+}
+
+.box-ranking {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #444
+}
+.box-ranking i {
+	font-size: 30px;
+	margin-bottom: 1rem;
+	color: #404588;
+}
+.box-ranking p {
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin: .5rem;
+}
+.conteudo-generos {
+	display: flex;
+	flex-direction: column;
+	background: #404588;
+	padding: 1rem;
+}
+.conteudo-generos h2 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+}
+
+.genero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	padding: 1rem;
+	width: 33.3%;
+}
+.genero .titulo-genero {
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-decoration: underline;
+}
+.genero .descricao-genero {
+	font-size: 1.4rem;
+	font-weight: 500;
+	margin: .5rem;
+	text-align: center;
+	line-height: 2rem;
+	letter-spacing: .5px;
+}
+.genero .subtitulo-genero {
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin: .5rem;
+}
+.subgeneros {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	font-size: 1.4rem;
+}
+.subgeneros li {
+	margin: .5rem;
+}
+.box-generos {
+	display: flex;
+	flex-direction: row;
+}
+@media screen and (max-width: 1000px) {
+	.box-generos {
+		display: flex;
+		flex-direction: column;
+	}
+	.genero {
+		width: 100%;
+	}
+}
+footer {
+	background: #313462;
+	padding: 30px 0;
+}
+
+footer p {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
